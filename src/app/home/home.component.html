@@ -2,4 +2,10 @@
   <h2 class="text-red">Đây là component Home</h2>
   <h3>Chào bạn {{ name }}</h3>
   <h5>Thêm hàng thứ 2 trong component Home</h5>
+  <input type="text" value="{{name}}">
+  <br>
+  <input type="text" [value]="name" title="đây là {{name}}">
+  <br>
+  <input type="text" [value]="name" [title]="'đây là ' + name">
+  <br>
 </div>
