@@ -11,9 +11,9 @@ export class HomeComponent implements OnInit {
   fruits = ['Apple', 'Orange', 'Banana'];
   red = 'text-red'
   fruits2 = [
-    { name: 'Apple', price: 20, discount: true },
-    { name: 'Orange', price: 10, discount: false },
-    { name: 'Banana', price: 15, discount: false },
+    { name: 'Apple', price: 20, onSale: true },
+    { name: 'Orange', price: 10, onSale: false },
+    { name: 'Banana', price: 15.275, onSale: false },
   ];
   constructor() {}
 
