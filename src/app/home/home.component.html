@@ -2,10 +2,20 @@
   <h2 class="text-red">Đây là component Home</h2>
   <br>
   <h3>Trái cây</h3>
-  <ul>
-    <li *ngFor="let fruit of fruits; index as i">{{ i + 1}}) {{fruit}}</li>
-    <!-- <ng-template ngFor let-fruit [ngForOf]="fruits" let-i="index">
-      <li>{{i+1}}. {{fruit}}</li>
-    </ng-template> -->
-  </ul>
+  <br>
+  <table class="table">
+    <tr>
+      <th>STT</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Discount</th>
+    </tr>
+    <tr *ngFor="let fruit of fruits2; let i = index">
+      <td>{{ i + 1}}</td>
+      <td>{{fruit.name}}</td>
+      <td><span [ngClass]="{'text-red' : fruit.price < 12}">{{fruit.price}}</span></td>
+      <td><span *ngIf="fruit.discount">Sale off!</span></td>
+    </tr>
+  </table>
+
 </div>

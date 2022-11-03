@@ -9,9 +9,16 @@ export class HomeComponent implements OnInit {
   name = 'Chương';
   age = 23;
   fruits = ['Apple', 'Orange', 'Banana'];
+  red = 'text-red'
+  fruits2 = [
+    { name: 'Apple', price: 20, discount: true },
+    { name: 'Orange', price: 10, discount: false },
+    { name: 'Banana', price: 15, discount: false },
+  ];
   constructor() {}
 
   ngOnInit(): void {
     console.log('fruits = ', this.fruits);
+    console.log('fruits = ', this.fruits2);
   }
 }

@@ -1,4 +1,14 @@
 .test {
   border: 1px solid red;
   box-shadow: 0px 2px 5px 1px red;
+  padding: 5px;
+}
+.text-red {
+  color: red;
+}
+table, td, th {
+  border: 1px solid black;
+}
+.table {
+  border-collapse: collapse;
 }
