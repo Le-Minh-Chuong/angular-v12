@@ -17,7 +17,7 @@
     </tr>
   </table> -->
   <label for="">City: </label>
-  <select name="" id="" (change)="selectDistrict($event)" >
+  <select name="" id="" (change)="selectDistrict($event)">
     <option value="{{city.city}}" *ngFor="let city of VNCities">{{city.city}}</option>
   </select>
   <br>
@@ -25,4 +25,9 @@
   <select name="" id="">
     <option *ngFor="let district of districts" value="{{district}}">{{district}}</option>
   </select>
+  <br>
+  <div>
+    <p>Counter = {{counter}}</p>
+    <p>CounterPow = {{counterPow}}</p>
+  </div>
 </div>

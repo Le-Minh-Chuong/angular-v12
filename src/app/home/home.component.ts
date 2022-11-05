@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../Services/common.service';
 
 @Component({
   selector: 'app-home',
@@ -116,9 +117,15 @@ export class HomeComponent implements OnInit {
       ],
     },
   ];
-  constructor() {}
+  counter = 0;
+  counterPow = 0;
+  constructor(private common: CommonService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.counter = this.common.counter;
+    this.counterPow = this.common.pow(this.counter);
+    this.common.counter++;
+  }
 
   selectDistrict(event: any): void {
     const city = event.target.value;
@@ -127,12 +134,12 @@ export class HomeComponent implements OnInit {
     }
 
     // C1
-    const districtFilterList = this.VNCities.filter(
-      (data) => data.city === city
-    );
-    if (districtFilterList && districtFilterList.length > 0) {
-      this.districts = districtFilterList[0].district;
-    }
+    // const districtFilterList = this.VNCities.filter(
+    //   (data) => data.city === city
+    // );
+    // if (districtFilterList && districtFilterList.length > 0) {
+    //   this.districts = districtFilterList[0].district;
+    // }
 
     // C2
     this.districts =
