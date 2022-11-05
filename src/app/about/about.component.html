@@ -1,5 +1,5 @@
 <p>about works!</p>
-<ul [ngSwitch]="loginName">
+<!-- <ul [ngSwitch]="loginName">
   <li *ngSwitchCase="'user'">
     <p>User is logged in</p>
     <app-home></app-home>
@@ -8,4 +8,18 @@
     <p>Admin is logged in</p>
   </li>
   <li *ngSwitchDefault>Please choose login name</li>
-</ul>
+</ul> -->
+<br>
+<div>
+  <label for="">lime</label>
+  <input type="radio" name="bgColor" id="" (click)="bgColor='lime'" >
+</div>
+<div>
+  <label for="">black</label>
+  <input type="radio" name="bgColor" id="" (click)="bgColor='black'">
+</div>
+<p appHighlight>Highlight me</p>
+<p [appHighlight]="myColor">Highlight me too</p>
+<p [appHighlight]="'orange'">Highlight me too</p>
+<p [appHighlight]="bgColor">Hover me!</p>
+<p [appHighlight]="bgColor2" defaultColor="violet">Hover me!</p>
