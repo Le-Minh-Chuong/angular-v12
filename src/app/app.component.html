@@ -1,2 +1,9 @@
 <h1>Hello world!</h1>
-<app-home></app-home>
+<nav>
+  <ul>
+    <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home Component</a></li>
+    <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Component</a></li>
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
