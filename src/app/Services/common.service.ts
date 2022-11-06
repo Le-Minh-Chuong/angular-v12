@@ -4,13 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class CommonService {
-  // private _counter = 0;
-  // public get counter() {
-  //   return this._counter;
-  // }
-  // public set counter(value) {
-  //   this._counter = value;
-  // }
   private _counter = 0;
   public get counter() {
     return this._counter;
@@ -30,5 +23,9 @@ export class CommonService {
 
   pow(n: number): number {
     return n * n;
+  }
+
+  submitData(data: any): void {
+    console.log('Gửi data lên server. Data: ', data);
   }
 }
