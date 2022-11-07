@@ -21,6 +21,10 @@ export class HttpServerService {
     const url = `${this.REST_API_SERVER}/comments`;
     return this.httpClient.get<any>(url, this.httpOptions);
   }
+  postComments(payload: any): Observable<any> {
+    const url = `${this.REST_API_SERVER}/comments`;
+    return this.httpClient.post<any>(url, payload, this.httpOptions);
+  }
   getRandomUsers(num: number = 1): Observable<any> {
     const url = `${this.REST_API_SERVER_RANDOM_USER}` + num;
     return this.httpClient.get<any>(url, this.httpOptions);

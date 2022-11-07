@@ -16,6 +16,11 @@
       "id": 2,
       "body": "some comment 2",
       "postId": 2
+    },
+    {
+      "body": "Đây là message số 3",
+      "postId": 1,
+      "id": 3
     }
   ],
   "profile": {

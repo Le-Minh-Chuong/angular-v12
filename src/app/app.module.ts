@@ -12,6 +12,7 @@ import { OnSalePipe } from './on-sale.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { PostDataComponent } from './post-data/post-data.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
     GetDataComponent,
+    PostDataComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
   providers: [],
