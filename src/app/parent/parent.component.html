@@ -1,0 +1,7 @@
+<h3>
+  this is parent component
+</h3>
+<button (click)="giveMoney()">Give money</button>
+<app-child #childJohn name="John" (childGreet)="helloBoy($event)"></app-child>
+<app-child #childMichael name="Michael" (childGreet)="helloBoy($event)"></app-child>
+<p>{{parentMessage}}</p>
